@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>url to pdf</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='main.css') }}">
+
+</head>
+
+<body>
+
+    <div class="message_holder"></div>
+
+    <section class="form-style-10">
+        <form action="/add" method="POST" name="li_form">
+
+            <div class="section"><span>*</span>Flask Base Template with UI</div>
+
+            <div class="inner-wrap">
+                <label>enter url <input type="text" name="value1" /></label>
+            </div>
+
+            
+
+            <input type="submit" value="download" />
+
+        </form>
+    </section>
+
+
+    {% if result %}
+    <section class="form-style-10" style="width:1000px;" id="result">
+
+        <table id="customers">
+            <tr>
+                <th>url</th>
+                
+                <th>result</th>
+            </tr>
+            <tr>
+                <td>{{result.value1}}</td>
+                <td>downloaded</td>
+                
+            </tr>
+        </table>
+    </section>
+    {% endif %}
+
+    
+
+</body>
+
+</html>
