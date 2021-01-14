@@ -17,7 +17,6 @@ def result():
     url  = str(request.form.get('value1'))
     pdf.from_url(url, 'finally2.pdf')
     
-    # You can validate the car brands. If someone is telling the wrong brand name, reply them with the wrong answer
     
 
     
@@ -27,7 +26,7 @@ def result():
     }
     
     
-    #return content
+    
     return render_template('index1.html', result=result)
 
 
