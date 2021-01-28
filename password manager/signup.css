@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url(signuppic.jpg);
+    background-size: cover;
+    
+}
+
+.container{
+    top:50%;
+    left:70%;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    color: aliceblue;
+
+}
+
+.card{
+    padding: 100px 100px 100px 100px;
+    /* background: padding-box; */
+    background: rgb(50,50,50);
+    /* background: inherit; */
+    border-radius: 10px;
+    position: relative;
+  /* same styles as before */
+  
+  &:before {
+    position: absolute; 
+    z-index: -1;
+    /* go outside padding-box by 
+     * a border-width ($b) in every direction */
+    top: -$b; right: -$b; bottom: -$b; left: -$b;
+    border: inherit;
+    border-color: transparent;
+    background: inherit;
+    background-clip: border-box;
+    content: ''
+}
+
+#but1{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    outline: none;
+    text-align: center;
+    width: 46px;
+}

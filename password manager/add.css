@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-image: url(blue7.jpeg);
+    background-size: cover;
+    color: aliceblue;
+}
+
+
+
+#but{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    margin-left: 50px;
+    outline: none;
+}

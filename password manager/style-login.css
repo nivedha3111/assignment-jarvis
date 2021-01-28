@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url(lock.jpg);
+    background-size: cover;
+}
+
+.container{
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform:translate(-50%,-50%)
+}
+
+.card{
+    padding: 100px 100px 100px 100px;
+    background: rgb(50,50,50);
+    border-radius: 10px;
+}
+
+#name{
+    width: 200px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    padding:6px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    margin-left: 50px;
+    outline: none;
+}
+
+#button1{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    outline: none;
+    text-align: center;
+    width: 46px;
+}
+
+a{
+    font-size: 20px;
+}
+
+img{
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -40px;
+}

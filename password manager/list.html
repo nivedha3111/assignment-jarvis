@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="list.css">
+    <title>List</title>
+    
+</head>
+
+<body>
+
+    <h3>User credentials</h3>
+    <table border=5>
+        <thead>
+            <td>UserID</td>
+            <td>Username</td>
+            <td>Email</td>
+            <td>Password</td>
+        </thead>
+
+        {% for row in rows %}
+
+        <tr>
+            <td>{{row["userid"]}}</td>
+            <td>{{row["username"]}}</td>
+            <td>{{row["email"]}}</td>
+            <td>{{row["password"]}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+    <br><br>
+    {% if l_rows %}
+    <h3>Pass-manager login credentials</h3>
+    <table border=5>
+        <thead>
+            <td>UserID</td>
+            <td>Username</td>
+            <td>Email</td>
+            <td>Password</td>
+        </thead>
+
+
+        {% for row in l_rows %}
+
+        <tr>
+            <td>{{row["userid"]}}</td>
+            <td>{{row["username"]}}</td>
+            <td>{{row["email"]}}</td>
+            <td>{{row["password"]}}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+    <br><br>
+    {% endif %}
+
+    <a href="/dashboard">Go back to Dashboard</a>
+
+</body>
+
+</html>
